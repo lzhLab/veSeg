@@ -2,19 +2,20 @@
 Compensation of small data with large filters for accurate liver vessel segmentation from contrast-enhanced CT images.
 
 The filters used in this study include:
-		CLAHE <a href="ref1">1</a>
-		Gabor \cite{mehrotra1992gabor} 
-		Gamma \cite{rahman2016adaptive} 
-		Gaussian \cite{SRINIVASAREDDY2021} 
-		Hessian \cite{frangi1998multiscale} 
-		Laplacian \cite{ZUNAIR2021104699} 
-		Median \cite{wu2004fingerprint} 
-		Mean \cite{janani2015image} 
-		Minimum \cite{chen1994fast}
-		Bilateral \cite{GENG2020201} 
-		Sobel \cite{NGUYEN2021104298} 
-		Canny \cite{shokhan2014efficient} 
-		Pillow (imageFilter) \cite{clark2015pillow}
+- CLAHE [1]
+- Gabor [2]
+- Gamma [3]
+- Gaussian [4]
+- Hessian [5]
+- Laplacian [6]
+- Median [7]
+- Mean [8]
+- Minimum [9]
+- Bilateral [10]
+- Sobel [11]
+- Canny [12]
+- Pillow [13]
+  
 # Reference
 1. <a name="ref1">Kuran, U., Kuran, E.C.: Parameter selection for clahe using multi-objective cuckoo search algorithm for image contrast enhancement. Intelligent Systems with Applications 12, 200051 (2021)</a>
 2. Mehrotra, R., Namuduri, K.R., Ranganathan, N.: Gabor filter-based edge detection. Pattern recognition 25(12), 1479–1494 (1992)
@@ -28,4 +29,4 @@ The filters used in this study include:
 10. Geng, J., Jiang, W., Deng, X.: Multi-scale deep feature learning network with bilateral filtering for SAR image classification. ISPRS Journal of Photogrammetry and Remote Sensing 167, 201–213 (2020)
 11. Nguyen, T.P., Chae, D.-S., Park, S.-J., Yoon, J.: A novel approach for evaluating bone mineral density of hips based on sobel gradient-based map of radiographs utilizing convolutional neural network. Computers in Biology and Medicine 132, 104298 (2021)
 12. Shokhan, M.: An efficient approach for improving canny edge detection algorithm. International journal of advances in engineering & technology 7(1), 59 (2014)
-13. Clark, A.: Pillow (pil fork) documentation. Readthedocs. https://buildmedia. readthedocs. org/media/pdf/pillow/latest/pillow. pdf (2015)
+13. Clark, A.: Pillow (pil fork) documentation. Readthedocs. https://buildmedia.readthedocs.org/media/pdf/pillow/latest/pillow.pdf (2015)
