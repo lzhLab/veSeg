@@ -15,3 +15,6 @@ The filters used in this study include:
 		Sobel \cite{NGUYEN2021104298} 
 		Canny \cite{shokhan2014efficient} 
 		Pillow (imageFilter) \cite{clark2015pillow}
+# Reference
+- Kuran, U., Kuran, E.C.: Parameter selection for clahe using multi-objective cuckoo search algorithm for image contrast enhancement. Intelligent Systems with Applications 12, 200051 (2021)
+- 
