@@ -1,6 +1,12 @@
 # veSeg
 Compensation of small data with large filters for accurate liver vessel segmentation from contrast-enhanced CT images.
 
+## Introduction
+Segmenting liver vessels from contrast-enhanced computed tomography images is essential for diagnosing liver diseases, planning surgeries, and delivering radiotherapy. Nevertheless, identifying vessels is a challenging task due to the tiny cross-sectional areas occupied by vessels, which has posed great challenges for vessel segmentation, such as limited features to be learned and difficulty in constructing high-quality as well as large-volume data.
+    We present an approach that only requires a few labeled vessels but delivers significantly improved results. Our model starts with vessel enhancement by fading out liver intensity and generates candidate vessels by a classifier fed with a large number of image filters. Afterwards, the initial segmentation is refined using Markov random fields.
+    In experiments on the well-known dataset 3D-IRCADb, the averaged Dice coefficient is lifted to 0.63, and the mean sensitivity is increased to 0.71. These results are significantly better than those obtained from existing machine-learning approaches and comparable to those generated from deep-learning models.
+    Sophisticated integration of large number filters is able to pinpoint effective features from liver images that are sufficient to distinguish vessels from other liver tissues under a scarcity of large-volume labeled data. The study can shed light on medical image segmentation, especially for those without sufficient data.
+
 The filters used in this study include:
 - CLAHE [1]
 - Gabor [2]
@@ -17,7 +23,7 @@ The filters used in this study include:
 - Pillow [13]
   
 # Reference
-1. <a name="ref1">Kuran, U., Kuran, E.C.: Parameter selection for clahe using multi-objective cuckoo search algorithm for image contrast enhancement. Intelligent Systems with Applications 12, 200051 (2021)</a>
+1. Kuran, U., Kuran, E.C.: Parameter selection for clahe using multi-objective cuckoo search algorithm for image contrast enhancement. Intelligent Systems with Applications 12, 200051 (2021)
 2. Mehrotra, R., Namuduri, K.R., Ranganathan, N.: Gabor filter-based edge detection. Pattern recognition 25(12), 1479–1494 (1992)
 3. Rahman, S., Rahman, M.M., Abdullah-Al-Wadud, M., Al-Quaderi, G.D., Shoyaib, M.: An adaptive gamma correction for image enhancement. EURASIP Journal on Image and Video Processing 2016(1), 1–13 (2016)
 4. Reddy, K.S., Jaya, T.: De-noising and enhancement of MRI medical images using gaussian filter and histogram equalization. Materials Today: Proceedings (2021)
